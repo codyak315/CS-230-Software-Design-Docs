@@ -54,36 +54,6 @@ We can also see, left to right, that from GameService to Game, Game to Team, and
 Lastly we can see the ProgramDriver class from which the rest of the program is called on, including our SingletonTester to verify that there is only ever one instance of a GameService as requested by the client.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Evaluation
 
 Development Requirements
@@ -109,7 +79,6 @@ Based on jetty, open sourced. serves Java-based web content and is available as 
 
 
 
-
 Recommendations
 
 Analyze the characteristics of and techniques specific to various systems architectures and make a recommendation to The Gaming Room. Specifically, address the following:
@@ -124,5 +93,4 @@ Memory Management: Windows employs virtual memory to keep a multitude of process
 
 Distributed Systems and Networks: The best solution for Windows Server would be to program Draw it or Lose it in a .NET compatible language such as C# or C++. This provides the application with the compatibility to run on all of the necessary platforms. In terms of a distributed system, by utilizing the Client-Server architecture failure detection is a necessity. One such method of detecting such an issue is handshaking, wherein at fixed intervals the various clients and the server send each other status signals that if not received indicate an issue that needs to be resolved. 
 	
-
 Security: The Windows OS provides various built-in security features such as Windows Defender, there are also a multitude of security principles that Windows offers services to help secure your data and network. Transport Layer Security (TLS) and its predecessor Secure Sockets Layer (SSL) are industry standard protocols for establishing secure links between networked computers that ensure protection for both the client and server via asymmetric encryption, wherein the client and server exchange data and create a temporary encryption providing security for both sides. 
